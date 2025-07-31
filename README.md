@@ -1,68 +1,58 @@
-# ⚛️ Módulo 5 – Desarrollo Frontend con React
+# 🧩 Módulo 5 – Microservicios y DevOps
 
-Este repositorio contiene ejercicios, prácticas y proyectos del **Módulo 5** del bootcamp **Desarrollo Web Fullstack con Java** (CodiGo). En este módulo se aprende a construir interfaces modernas usando **React**, el ecosistema de componentes, y el consumo de APIs.
+Este repositorio contiene configuraciones, scripts, ejemplos y documentación del **Módulo 5** del bootcamp **Desarrollo Web Fullstack con Java** (CodiGo). En este módulo se aprende a desarrollar y desplegar aplicaciones basadas en **microservicios**, además de integrar herramientas de **DevOps**.
 
 ---
 
 ## 📚 Contenido del módulo
 
-### 🔸 Fundamentos de React
+### 🔸 Arquitectura de Microservicios
 
-- ¿Qué es React? JSX y Virtual DOM
-- `create-react-app` y estructura del proyecto
-- Componentes funcionales
-- Props y estado (`useState`)
-- Estilos en React: CSS, inline styles, módulos
+- Diferencias entre monolito y microservicios
+- Comunicación entre servicios
+- Principios de diseño desacoplado
+- Patrón API Gateway
+- Registro y descubrimiento de servicios con **Eureka**
+- Configuración centralizada con **Spring Cloud Config**
+- Balanceo de carga con **Ribbon**
+- Fallos controlados con **Resilience4j**
+- Comunicación declarativa con **Feign**
 
-### 🔸 Eventos y lógica
+### 🔸 Trazabilidad y monitoreo
 
-- Manejo de eventos (`onClick`, `onChange`, etc.)
-- Formularios controlados
-- Validación básica de entradas
-- Comunicación entre componentes
+- Uso de **Spring Sleuth** y **Zipkin** para trazabilidad distribuida
+- Centralización de logs
 
-### 🔸 Hooks y lógica avanzada
+### 🔸 DevOps y despliegue
 
-- `useEffect` para efectos secundarios y peticiones HTTP
-- `useRef`, `useContext` y custom hooks
-- Manejo de ciclo de vida funcional
-- LocalStorage y sincronización
-
-### 🔸 Consumo de APIs
-
-- `fetch` y `axios`
-- Manejo de errores y carga (`try/catch`, estados `loading`)
-- Uso de `async/await`
-- Renderizado condicional según estado de datos
-
-### 🔸 Proyecto final
-
-- Creación de frontend desde cero
-- Consumo de una API externa
-- Manejo de rutas (`react-router-dom`)
-- Validación de formularios
-- Deploy en Vercel o Netlify
+- Introducción a **Docker**
+  - Crear imágenes y contenedores
+  - Dockerfile y docker-compose
+- Despliegue de microservicios en contenedores
+- Introducción a **Jenkins**
+  - CI/CD básico con Jenkinsfile
+- Conceptos iniciales de **Kubernetes**
 
 ---
 
 ## 📁 Estructura del repositorio
 
 ```bash
-bootcamp-modulo5-react/
+bootcamp-modulo5-microservicios-devops/
 ├── README.md
-├── /src
-│   ├── /components
-│   ├── /pages
-│   ├── /services
-│   ├── /hooks
-│   ├── App.jsx
-│   └── main.jsx
-├── /public
-│   └── index.html
+├── /config-server
+├── /eureka-server
+├── /gateway
+├── /servicio-usuarios
+├── /servicio-productos
+├── /docker
+│   └── docker-compose.yml
+├── /jenkins
+│   └── Jenkinsfile
 ├── /docs
-│   └── screenshots/
+│   └── arquitectura_microservicios.png
 ├── /notas
-│   └── comandos_react.md
+│   └── comandos_docker_k8s.md
 └── /recursos
     └── enlaces.txt
 ```
@@ -71,24 +61,25 @@ bootcamp-modulo5-react/
 
 ## ✅ Progreso
 
-- [ ] Instalación y estructura inicial
-- [ ] Componentes, props y estado
-- [ ] Eventos y formularios
-- [ ] Hooks (`useState`, `useEffect`)
-- [ ] Consumo de API externa
-- [ ] Ruteo con React Router
-- [ ] Proyecto final (frontend completo)
+- [ ] Configuración de Eureka y Spring Config Server
+- [ ] Servicios con Feign y Ribbon
+- [ ] Gateway API funcional
+- [ ] Trazabilidad con Sleuth y Zipkin
+- [ ] Contenedores Docker para cada microservicio
+- [ ] docker-compose funcionando
+- [ ] Jenkinsfile y pruebas CI/CD
+- [ ] Exploración inicial de Kubernetes
 
 ---
 
 ## 🔗 Recursos útiles
 
-- [Documentación oficial de React](https://react.dev/)
-- [React Router](https://reactrouter.com/)
-- [Axios – cliente HTTP](https://axios-http.com/)
-- [Vercel (deploy)](https://vercel.com/)
-- [Netlify (deploy)](https://www.netlify.com/)
-- [React Cheat Sheet](https://reactcheatsheet.com/)
+- [Spring Cloud Reference](https://spring.io/projects/spring-cloud)
+- [Docker Docs](https://docs.docker.com/)
+- [Docker Compose Docs](https://docs.docker.com/compose/)
+- [Jenkins Docs](https://www.jenkins.io/doc/)
+- [Kubernetes Docs](https://kubernetes.io/docs/)
+- [12-Factor App](https://12factor.net/)
 
 ---
 
